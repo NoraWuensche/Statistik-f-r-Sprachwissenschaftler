@@ -1,6 +1,7 @@
 # Hausaufgabe 03
 # Nora Wünsche <Wuenschn@students.uni-marburg.de>
-# 2014-04-27
+# 2014-04-28
+# Diese Datei darf weiter als Beispiel genutzt werden.
 # Dieses Werk ist lizenziert unter einer CC-BY-NC-SA Lizenz.
 
 # Sie sollten die Datei auch in Ihren Ordner kopieren und einen Commit machen, 
