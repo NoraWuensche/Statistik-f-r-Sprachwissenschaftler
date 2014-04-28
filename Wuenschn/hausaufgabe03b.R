@@ -82,7 +82,7 @@ print(my.data**3)
 
 # with xtabs()
 # die komische Syntax mit Tilde wird später deutlicher ....
-# print(xtabs(~more.data))
+# print(xtabs(print~more.data))
 
 # auch die Ergebnisse solcher Funktionen können wir einer Variabel zuweisen:
 # tabelle <- xtabs(~more.data)
@@ -97,7 +97,7 @@ print(my.data**3)
 # print(tabelle.rel)
 
 # Vervollständigen Sie folgende Zeile, sodass Prozentwerte aus den relativen
-# Häufigkeiten entst ehen: tabelle.prozent <- tabelle.rel code_hier 
+# Häufigkeiten entst ehen: tabelle.prozent <- tabelle.rel*100  
 # print(tabelle.prozent)
 
 # Aber die Frage bleibt, wie berechnen wir den Modus? Durch sortieren!
@@ -110,13 +110,16 @@ print(my.data**3)
 
 # Nehmen Sie das erste Element aus dem obigen Ergebnis, um den Modalwert zu
 # bekommen:
-# modus <- code_hier
+# modus <- which.max(tabelle.sorted)
 
 # Verständisfrage: gibt es immer nur *einen* Modalwert? 
 # Wenn nicht, ist der Code oben korrekt? Warum?
 # Schreiben Sie Ihre Antwort als Comment hier.
 
-# antwort_hier
+# Es kann mehrere Modalwerte geben. 
+# Schließlich gibt es ja bi- und multimodale Verteilungen.
+# Hätte es in dem Vektor noch "n" gegeben, auch 11 mal, dann gäbe es zwei Modalwerte.
+# In dem Fall des vorhandenen Beispiels handelt es sich aber nur um einen.
 
 # Als Abscheid ein Beispiel mit der Darstellung Frequenzdaten mit Säulendiagramm
 # bzw. Histogramm
