@@ -131,4 +131,3 @@ print(my.data**3)
 # Sie sind jetzt fertig -- das waren ganz viele Kleinigkeiten, aber
 # Kleinigkeiten, die wir immer wieder nutzen werden. Machen Sie einen Commit und
 # einen Push!
-
