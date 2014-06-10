@@ -1,6 +1,6 @@
 % Hausaufgabe 03
-% Phillip Alday <phillip.alday@staff.uni-marburg.de>
-% 2014-04-23
+% Nora Wünsche <Wuenschn@students.uni-marburg.de>
+% 2014-04-27
 
 Falls die Umlaute in dieser und anderen Dateien nicht korrekt dargestellt werden, sollten Sie File > Reopen with Encoding > UTF-8 sofort machen (und auf jeden Fall ohne davor zu speichern), damit die Enkodierung korrekt erkannt wird! 
 
@@ -26,8 +26,10 @@ Der Index bzw. das Staging Area ist ein vorläufiger Commit, an dem Sie gerade a
 # Ein bisschen Markdown
 Es gibt in RStudio und im Internet **viel** zu Markdown. RStudio nutzt einen besonderen Dialekt, damit auch R-Code-Blöcke eingebaut werden können, aber der Großteil der "Syntax" ändert sich nicht. Fügen Sie hier eine ungeordnete Liste hier mit zumindest zwei Erwartungen von diesem Kurs ein. Testen Sie, dass Sie das korrekt formatiert haben, indem Sie auf "Knit HTML" klicken und schauen, dass die Liste mit Punkten erscheint.  
 
-list_hier
-#Erwartungen
+# Erwartungen:
+- routinierterer Gebrauch der Programme Git, R und RStudio
+- weniger Angst vor Statistik
+
 
 ## R-Code-Blöcke
 
@@ -51,13 +53,6 @@ Per Default wird der R-Code schön dargestellt und durchgeführt, sodass sowohl 
 
 ```r
 library(ggplot2)
-```
-
-```
-## Error: there is no package called 'ggplot2'
-```
-
-```r
 # example from http://www.statmethods.net/advgraphs/ggplot2.html
 
 # create factors with value labels
@@ -71,19 +66,10 @@ mtcars$cyl <- factor(mtcars$cyl, levels = c(4, 6, 8), labels = c("4cyl", "6cyl",
 # color)
 carplot <- qplot(mpg, data = mtcars, geom = "density", fill = gear, alpha = I(0.5), 
     main = "Distribution of Gas Milage", xlab = "Miles Per Gallon", ylab = "Density")
-```
-
-```
-## Error: konnte Funktion "qplot" nicht finden
-```
-
-```r
 print(carplot)
 ```
 
-```
-## Error: Objekt 'carplot' nicht gefunden
-```
+![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png) 
 
 
 Das ist übrigens ein sehr gutes Beispiel, wie die Darstellung von Daten bzw. Statistik unseren Eindruck und unsere Wahrnehmung davon beeinflussen kann. Wenn wir die Grafik breiter aber weniger hoch, sieht das Bild anders aus!
@@ -93,9 +79,7 @@ Das ist übrigens ein sehr gutes Beispiel, wie die Darstellung von Daten bzw. St
 print(carplot)
 ```
 
-```
-## Error: Objekt 'carplot' nicht gefunden
-```
+![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
 
 
 ## Inline R-Code
@@ -103,10 +87,13 @@ R-Code können Sie auch direkt in den Fließtext bauen: Die Quadratwurzel von 13
 
 Ergänzen Sie folgende Zeile mit Inline R-code, sodass der Satz korrekt und vollständig ist:
 
-Die Summe von 98545455678767 und 567886538546532323 ist: code_hier .
+Die Summe von 98545455678767 und 567886538546532323 ist: 5.6879 &times; 10<sup>17</sup>. 
 
 # Normaler R-Code 
 Es ist natürlich auch möglich R-Code zu schreiben, ohne ihn in (R)Markdown einzubetten. Dazu geht die Aufgabe weiter mit `hausaufgabe03b.R` weiter. Sie sollten die Datei auch in Ihren Ordner kopieren und einen Commit machen, bevor Sie die Kopie weiter anpassen.
 
 # Lizenz
+Diese Datei darf weiter als Beispiel genutzt werden.
 Dieses Werk ist lizenziert unter einer CC-BY-NC-SA Lizenz.
+
+  
