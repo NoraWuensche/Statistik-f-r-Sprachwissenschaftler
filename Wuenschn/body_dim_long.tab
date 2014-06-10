@@ -1,4 +1,4 @@
-subj	height	weight	sex	age	major
+subj	height	weight	sex	age	major 
 1	168	62	f	23	M.A..Klinische.Linguistik
 2	163	70	f	24	M.A..Speech.Science
 3	166	78	f	26	M.A..Germanistische.Linguistik
@@ -36,3 +36,4 @@ subj	height	weight	sex	age	major
 35	168	54	f	24	M.A..Klinische.Linguistik
 36	160	50	f	28	other
 37	169	59	f	25	M.A..Speech.Science
+
