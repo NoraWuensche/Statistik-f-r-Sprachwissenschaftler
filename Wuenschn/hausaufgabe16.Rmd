@@ -59,6 +59,32 @@ ggplot(diamonds,aes(x=carat,y=price,color=color)) + geom_point(alpha=0.3)
 ggplot(diamonds,aes(x=carat,y=price,color=color)) + geom_point() + facet_wrap(~color)
 ```
 
+
+
+# Analyse
+Ausgangsfrage: Haben Gweicht (carat) und Farbe (color) einen Einfluss auf den Preis?
+
+
+```{r}
+anova.1 <- aov(price ~ carat*color, data=diamonds)
+summary(anova.1)
+```
+
+```{r}
+ggplot(diamonds, aes(x=carat, y=price, color=color)) + geom_point() + facet_wrap(~color)
+```
+ Das Merkmal der Farbe ist an der Graphik nicht besonders gut zu erkennen, deswegen noch eine Graphik im "Violin"-Format:
+
+```{r}
+ggplot(diamonds) + geom_violin(aes(x=color, y=price, color=color, fill = color),alpha=0.3)
+```
+
+Das Gewicht scheint einen weitaus größeren Einfluss auf den Preis zu haben als die Farbe.
+Je schwerer der Diamant, desto teurer ist er in der Regel auch. Der Einfluss der Farben auf den Preis ist weniger eindeutig. Scheinbar sind Diamanten der Farbe J besonders teuer, die der Farbe E besonders günstig.
+Die Graphiken veranschaulichen dieses Ergebnis.
+
+
+
 # Noch eine Überlegung
 Haben Sie dabei explorativ oder konfirmativ gearbeitet? Was hat das für eine Auswirkung auf die Interpretation der Ergebnisse?
 
