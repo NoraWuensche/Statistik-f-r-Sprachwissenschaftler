@@ -1,6 +1,7 @@
 % Hausaufgabe 16
-% Phillip Alday <phillip.alday@staff.uni-marburg.de>
-% 2014-06-13
+% Nora Wünsche <wuenschn@students.uni-marburg.de>
+% 2014-06-16
+% Diese Datei darf weiter als Beispiel genutzt werden.
 
 Falls die Umlaute in dieser und anderen Dateien nicht korrekt dargestellt werden, sollten Sie File > Reopen with Encoding > UTF-8 sofort machen (und auf jeden Fall ohne davor zu speichern), damit die Enkodierung korrekt erkannt wird! 
 
