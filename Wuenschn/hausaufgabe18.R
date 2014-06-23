@@ -102,22 +102,26 @@ cor(linreg$x1,linreg$x2)
 
 # Wir laden jetzt einen weiteren Datensatz als Beispiel: 
 # (Sie müssen den folgenden Befehl evtl. anpassen!)
-pyreg <- read.table("wuenschn/pyreg.tab",header=TRUE) 
+pyreg <- read.table("pyreg.tab",header=TRUE) 
 
 # Wie linreg hat pyreg drei Spalten x1, x2, y
 # Plotten Sie die Punkte + Regressionslinie für y ~ x1 (wie oben).
 
-# CODE_HIER
+ggplot(pyreg,aes(x=x1,y=y)) + geom_point() + geom_smooth(method="lm")
 
 # Und das gleiche für y ~ x2. 
 
-# CODE_HIER
+ggplot(pyreg,aes(x=x2,y=y)) + geom_point() + geom_smooth(method="lm")
 
 # Berechnen Sie die zwei Regressionsmodelle für y ~ x1 und y ~ x2
 
-# CODE_HIER
 
-# CODE_HIER
+lm.x1.pyreg <-lm(y~x1,data=pyreg)
+lm.x1.pyreg
+
+lm.x2.pyreg <- lm(y~x2, data=pyreg)
+lm.x2.pyreg
+
 
 # Bevor Sie die Regression y ~ x1 + x2 berechnen, schauen Sie sich die
 # Korrelation (mit Konfidenzintervall!) zwischen x1 und x2 an:
