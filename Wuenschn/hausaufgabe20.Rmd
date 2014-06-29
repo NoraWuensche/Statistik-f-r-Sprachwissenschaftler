@@ -1,6 +1,7 @@
 % Hausaufgabe 20
 % Nora WÜnsche <wuenschn@students.uni-marburg.de>
-% 2014-06-27
+% 2014-06-29
+% Diese Datei darf weiter als Beispiel genutzt werden.
 
 Falls die Umlaute in dieser und anderen Dateien nicht korrekt dargestellt werden, sollten Sie File > Reopen with Encoding > UTF-8 sofort machen (und auf jeden Fall ohne davor zu speichern), damit die Enkodierung korrekt erkannt wird! 
 
@@ -47,7 +48,7 @@ Die Items in dieser Studie sind "Szenarien", also Situationen wo man mehr oder w
 
 Allerdings merken wir, dass `scenario` falsch kodiert ist, was wir korrigieren müssen:
 
-CODE_BLOCK_HIER
+stimmen$scenario <- as.factor(stimmen$scenario)
 
 ## Auswirkung der experimentellen Manipulation
 Um einen groben Eindruck zu bekommen, können wir schnell einen Boxplot machen:
